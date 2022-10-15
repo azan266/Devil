@@ -33,11 +33,11 @@ def ud():
 def FD():
     os.system('clear')
     print(logo)
-    print('\x1b[1;33m [1] SUBSCRIBE MY FRIEND CHANNEL')
+    print('\x1b[1;33m [1] FOLLOW MY FACEBOOK ACCOUNT ')
     print(' [2] EXIT')
     opt = input('\n  \x1b[1;32m Choose option >>> ')
     if opt == '1':
-        os.system('xdg-open https://youtube.com/channel/UC5gwYXg9ytZC1Wo7KPsybSw')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100000138827119')
         o()
         return None
     None('\n\x1b[1;31mEXIT\x1b[0;97m')
@@ -115,13 +115,7 @@ def cek_apk(session,coki):
         else:
             print('')
  
-def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://www.facebook.com/profile.php?id=100086738192739', {
-            'cookie': coki }, **('cookies',)).text, 'html.parser')
-        get = r.find('a', 'Ikuti', **('string',)).get('href')
-        session.get('https://free.facebook.com' + str(get), {
-            'cookie': coki }, **('cookies',)).text
-            
+
             
  
 class jalan:
@@ -268,13 +262,7 @@ def i():
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
     os.system("clear")
-    print(logo)
-    passx = int(input("[*] Enter Password Limit : "))
-    HamiiID = []
-    print("")
-    for bilal in range(passx):
-        pww = input("[*] Enter Password : ")
-        HamiiID.append(pww)
+    
     with ThreadPool(max_workers=50) as manshera:
         clear()
         tl = str(len(user))
